@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Aref Ruqaa Ink", serif;
+  background-color: rgb(246, 240, 240);
+}
+
+h1 {
+  margin: 5vh;
+  text-align: center;
+  border-radius: 10px;
+ background: rgb(159,201,252);
+background: radial-gradient(circle, rgba(159,201,252,1) 0%, rgba(254,237,194,1) 100%);
+}
+
+.picture {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 135px;
+}
+
+.picture .pictureItem {
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 40vh;
+}
+
+.picture .pictureItem .imageContainer {
+  overflow: hidden;
+  height: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture .pictureItem .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.picture .pictureItem.imageContainer img:hover {
+  transform: scale(1.25);
+}
+
+.picture .pictureItem .imageContainer img::after {
+  background-color: blue;
+}
+
+.picture .pictureItem .infoPhotographer {
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+}
