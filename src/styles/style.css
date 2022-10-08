@@ -37,8 +37,7 @@ h1 {
 .picture .pictureItem {
   font-size: 1.2rem;
   padding: 1rem;
-  width: 400px;
-  
+  width: 400px;  
 }
 
 .picture .pictureItem .imageContainer {
@@ -66,7 +65,8 @@ h1 {
 
 .picture .pictureItem .infoPhotographer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
  
