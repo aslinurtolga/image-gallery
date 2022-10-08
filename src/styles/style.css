@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,24 +13,32 @@ body {
 
 h1 {
   margin: 5vh;
+  padding: 2px;
   text-align: center;
   border-radius: 10px;
- background: rgb(159,201,252);
-background: radial-gradient(circle, rgba(159,201,252,1) 0%, rgba(254,237,194,1) 100%);
+  background: rgb(159, 201, 252);
+  background: radial-gradient(
+    circle,
+    rgba(159, 201, 252, 1) 0%,
+    rgba(254, 237, 194, 1) 100%
+  );
 }
 
 .picture {
   display: inline-block;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding-left: 135px;
+  align-items: center;
+  width: 400px;
+  padding-left: 10rem;
+  
 }
 
 .picture .pictureItem {
   font-size: 1.2rem;
   padding: 1rem;
-  width: 40vh;
+  width: 400px;
+  
 }
 
 .picture .pictureItem .imageContainer {
@@ -40,7 +49,6 @@ background: radial-gradient(circle, rgba(159,201,252,1) 0%, rgba(254,237,194,1) 
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-
 }
 
 .picture .pictureItem .imageContainer img {
@@ -49,6 +57,7 @@ background: radial-gradient(circle, rgba(159,201,252,1) 0%, rgba(254,237,194,1) 
   object-fit: cover;
   transition: all 0.3s ease;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .picture .pictureItem .imageContainer img:hover {
@@ -57,6 +66,7 @@ background: radial-gradient(circle, rgba(159,201,252,1) 0%, rgba(254,237,194,1) 
 
 .picture .pictureItem .infoPhotographer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
 }
+ 
