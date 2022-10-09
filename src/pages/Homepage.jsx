@@ -4,7 +4,7 @@ import data from "../helper/data";
 
 const Homepage = () => {
   return (
-    <div style={{ minHeight: "100vh" }}>
+    <div style={{ minHeight: "100rem" }}>
       <h1>My Photograph Portfolio</h1>
       <div className="img">
         {data.map((d) => {
